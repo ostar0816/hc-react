@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.studyEdit {
+  overflow: hidden;
+
+  padding: 10px;
+
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+}
+
+.search {
+  margin-top: @buttons-margin-space;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.studyEdit {
+  background-color: white;
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.multipleSelect {
+  :global(.ant-select-selection__choice) {
+    width: 100%;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

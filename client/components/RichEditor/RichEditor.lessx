@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.editor {
+  &,
+  :global(.public-DraftEditor-content) {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  :global(.public-DraftEditor-content) {
+    padding: 5px 10px;
+  }
+
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    margin: 0 -@buttons-margin-space / 2;
+
+    > * {
+      margin: 0 @buttons-margin-space / 2;
+    }
+  }
+}
+
+.body {
+  position: relative;
+
+  border-radius: @border-radius-base;
+
+  &__editor {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: auto;
+    cursor: text;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.body {
+  border: @border-width-base solid @border-color-base;
+  background-color: @component-background;
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+.highlightText {
+  background-color: fade(@primary-color, 10%);
+}
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.header {
+  flex: 0 0 40px;
+}
+.body {
+  flex: 1 2 auto;
+}
+
+/* Modifiers
+   ==========================================================================
+*/

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addUserRole add 1`] = `
+Object {
+  "addUserRole": Object {
+    "viewer": Object {
+      "userRoles": Array [
+        Object {
+          "description": "admin guy",
+          "name": "Admin",
+        },
+        Object {
+          "description": "rad guy",
+          "name": "Radiologist",
+        },
+      ],
+    },
+  },
+}
+`;

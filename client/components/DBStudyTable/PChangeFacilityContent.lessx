@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.popover {
+  :global(.ant-divider) {
+    margin-bottom: @buttons-margin-space;
+  }
+}
+
+.buttons {
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+
+  text-align: right;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.popover {
+  max-width: 480px;
+}
+
+/* Modifiers
+   ==========================================================================
+*/

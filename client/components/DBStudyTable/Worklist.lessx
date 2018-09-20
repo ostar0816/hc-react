@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import "../../style/antdCustomThemeVars";
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+
+/**
+ * Containers
+ *
+*/
+
+.popover {
+    :global(.ant-btn) + :global(.ant-btn) {
+        margin-left: @buttons-margin-space;
+    }
+}
+
+.worklist {
+
+    padding: 0 15px;
+
+    :global(.ant-badge) + :global(.ant-badge) {
+        margin-left: @buttons-margin-space * 4;
+    }
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.worklist {
+    :global(.ant-badge-count) {
+        color: @primary-color;
+        background-color: @component-background;
+        -webkit-box-shadow: 0 0 0 1px @border-color-base;
+        box-shadow: 0 0 0 1px @border-color-base;
+    }
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.worklist {
+
+    height: @study-table-worklist-height;
+
+    > div:first-of-type {
+        flex: 0 1 90px;
+    }
+    > div:last-of-type {
+        flex: 1 2 auto;
+    }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

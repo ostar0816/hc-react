@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateReportTemplate update 1`] = `
+Object {
+  "updateUserRole": Object {
+    "description": "rad guy",
+    "name": "Radiologist",
+  },
+}
+`;

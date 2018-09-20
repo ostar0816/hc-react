@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import '../../node_modules/antd/lib/style/themes/default.less';
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.permission {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+
+  padding: 10px 15px;
+
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+}
+
+.selects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table {
+  position: relative;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.selects {
+  height: 45px;
+}
+
+.table {
+  flex: 1 2 auto;
+}
+
+/* Modifiers
+   ==========================================================================
+*/

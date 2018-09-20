@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateUser update 1`] = `
+Object {
+  "updateUser": Object {
+    "email": "m.s@yahoo.co.uk",
+    "firstName": "Michael",
+    "lastName": "Shiffer",
+    "userRole": Object {
+      "name": "Radiologist",
+    },
+  },
+}
+`;

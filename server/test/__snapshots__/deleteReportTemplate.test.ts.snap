@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deleteReportTemplate delete 1`] = `
+Object {
+  "deleteReportTemplate": Object {
+    "viewer": Object {
+      "reportTemplates": Array [
+        Object {
+          "description": "Proper bone scan",
+          "name": "MR Bone U2",
+          "template": Object {
+            "editorStructure": Array [
+              "def",
+              18,
+            ],
+          },
+        },
+      ],
+    },
+  },
+}
+`;

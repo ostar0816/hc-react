@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateUserRolePermissions update 1`] = `
+Object {
+  "updateUserRolePermissions": Object {
+    "viewer": Object {
+      "userRoles": Array [
+        Object {
+          "name": "Admin",
+          "permissions": Array [],
+        },
+        Object {
+          "name": "Radiologist",
+          "permissions": Array [
+            "LIST_ALL_STUDIES",
+            "LIST_STUDIES_ASSIGNED_TO_ME",
+          ],
+        },
+      ],
+    },
+  },
+}
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addUser add 1`] = `
+Object {
+  "addUser": Object {
+    "viewer": Object {
+      "users": Array [
+        Object {
+          "email": "john.doe@gmail.com",
+          "firstName": "John",
+          "lastName": "Doe",
+          "userRole": Object {
+            "name": "Admin",
+          },
+        },
+        Object {
+          "email": "m.s@yahoo.co.uk",
+          "firstName": "Michael",
+          "lastName": "Shiffer",
+          "userRole": Object {
+            "name": "Radiologist",
+          },
+        },
+      ],
+    },
+  },
+}
+`;

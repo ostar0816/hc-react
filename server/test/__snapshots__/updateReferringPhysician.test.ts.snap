@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateReferringPhysician update 1`] = `
+Object {
+  "updateReferringPhysician": Object {
+    "dicomValue": "FRANK^MALERO",
+    "email": "frank.malero@yahoo.co.uk",
+    "fax": "555 4444 333",
+    "name": "Frank Malero",
+    "phone": "666 2222 8888",
+    "physicianUid": "UI3333",
+  },
+}
+`;

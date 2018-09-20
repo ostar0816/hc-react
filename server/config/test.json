@@ -1,0 +1,55 @@
+{
+  "name": "development",
+  "host": "192.168.2.67",
+  "hostIp": "192.168.2.67",
+  "user": "root",
+  "password": "password",
+  "database": "pacsdb",
+  "admin_name": "superadmin",
+  "redis": {
+    "host": "localhost"
+  },
+  "mongodb": {
+    "uri": "mongodb://localhost/pacs_ris",
+    "options": {}
+  },
+  "dcm4chee": {
+    "authClientSecret": "",
+    "keycloakUrl": "https://18.221.147.214:8843/auth/realms/dcm4che/protocol/openid-connect/token",
+    "restUrl": "http://localhost:9080",
+    "AETitle": "DCM4CHEE"
+  },
+  "sessionSecret": "topsecret",
+  "admin_user": "root",
+  "admin_password": "password",
+  "port": 3000,
+  "localPath": "./uploads",
+  "dcm_root": "/dcm4che/dcm4che/data/fs1",
+  "s3CloudFrontUrl": "https://dcm4chee-staging.s3.us-east-2.amazonaws.com/",
+  "awss3": {
+    "accessKeyId": "AKIAJCCXICRUBOWSIVVA",
+    "secretAccessKey": "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",
+    "region": "us-east-2",
+    "bucket": "dcm4chee-staging"
+  },
+  "pubnub": {
+    "publishKey": "pub-c-7295f07d-42cb-480b-b504-975824c93f93",
+    "subscribeKey": "sub-c-b01e4900-0c88-11e8-b32f-5ea260837941",
+    "secretKey": "sec-c-M2M2YWVlMzYtYWMyZS00NjdhLWJkNTMtOTYwOGU4YzM1YzZm"
+  },
+  "defaultTAT": 15,
+  "superadmin": "admin@directradiology.com",
+  "defaultMenu": [
+    "Study Edit",
+    "Download",
+    "Delete Study",
+    "Assign Facilities",
+    "Share Study",
+    "Dictate Study",
+    "Purge Images",
+    "Print Report",
+    "Dictate Image",
+    "Facility Note",
+    "Confirm Study"
+  ]
+}

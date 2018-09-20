@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateFacilityTechConf update 1`] = `
+Object {
+  "updateFacilityTechConf": Object {
+    "techConf": Object {
+      "contrastRequirements": Array [
+        Object {
+          "modality": "CT",
+          "requirement": "OPTIONAL",
+        },
+      ],
+      "readType": "PRELIM",
+      "tatLimits": Array [
+        Object {
+          "studyPriority": "ROUTINE",
+          "timeSeconds": 120,
+        },
+      ],
+    },
+  },
+}
+`;

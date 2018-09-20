@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addReportTemplate add 1`] = `
+Object {
+  "addReportTemplate": Object {
+    "viewer": Object {
+      "reportTemplates": Array [
+        Object {
+          "description": "head issues",
+          "name": "CT Head T1",
+          "template": Object {
+            "editorStructure": Array [
+              "abc",
+              1,
+              4,
+            ],
+          },
+        },
+        Object {
+          "description": "Proper bone scan",
+          "name": "MR Bone U2",
+          "template": Object {
+            "editorStructure": Array [
+              "def",
+              18,
+            ],
+          },
+        },
+      ],
+    },
+  },
+}
+`;

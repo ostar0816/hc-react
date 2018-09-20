@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateFacility update 1`] = `
+Object {
+  "updateFacility": Object {
+    "address": "Wallstreet 12",
+    "city": "Log Angeles",
+    "email": "awesome@institut.com",
+    "faxNumber": "1222222",
+    "institutionName": "Awesome institution",
+    "phoneNumber": "7777888",
+    "state": "California",
+    "websiteUrl": "http://institut.1234",
+    "zip": "AA22D",
+  },
+}
+`;

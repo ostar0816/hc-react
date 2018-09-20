@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Component TableCustom
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+// fix drag & drop for table
+:global(.ant-table-thead) {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+:global(.ant-table) {
+  td {
+    white-space: nowrap;
+
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  th {
+    // &:global(.ant-table-column-has-filters) {
+    //   position: relative;
+    // }
+    // :global(.ant-table-column-sorter),
+    // :global(.ant-dropdown-trigger):global(.anticon-filter) {
+    //   position: absolute;
+
+    //   top: 8px;
+    // }
+    // :global(.ant-table-column-sorter) {
+    //   right: 10px;
+    // }
+    // :global(.ant-dropdown-trigger):global(.anticon-filter) {
+    //   right: 30px;
+    // }
+
+    :global(.react-resizable-handle) {
+      background: none;
+    }
+  }
+
+  :global(.ant-table-fixed-right) {
+    z-index: 1; // fix layout because DateRangePickerCustom
+  }
+}
+
+.table {
+  // custom resizable area for columns table
+  :global(.StudyTableDraggable) > :global(.react-resizable-handle) {
+    cursor: col-resize;
+  }
+
+  :global(.ant-pagination):global(.ant-table-pagination)  {
+    margin: 8px 3 * @padding-lg 8px 0;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+tr {
+  &:nth-of-type(2n) {
+    > td {
+      background-color: @background-color-base;
+    }
+  }
+}
+// disable odd/even row color for date picker
+:global(.ant-calendar-table) {
+  tr > td:global(.ant-calendar-cell) {
+    background-color: initial;
+  }
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+.table {
+  background-color: @component-background;
+
+  // custom resizable area for columns table
+  :global(.StudyTableDraggable) > :global(.react-resizable-handle:hover) {
+    background-color: fade(@primary-color, 25%);
+  }
+}
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.table {
+  // custom resizable area for columns table
+  :global(.StudyTableDraggable) > :global(.react-resizable-handle) {
+    height: 100%;
+    width: 10px;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

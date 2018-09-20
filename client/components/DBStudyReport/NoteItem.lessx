@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.noteItem {
+  padding: 4px;
+}
+
+.noteItem {
+  font-size: @font-size-sm;
+  border-radius: @border-radius-base;
+
+  & + & {
+    margin-top: 8px;
+  }
+
+  & > & {
+    margin: 4px -5px 0 4px;
+  }
+
+  &__header,
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header {
+    h4 {
+      margin: 0;
+    }
+  }
+
+  &__footer {
+    margin: 2px 0 -2px 0;
+
+    > div:last-of-type {
+      text-align: right;
+    }
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.noteItem {
+  border: @border-width-base @border-style-base @border-color-base;
+
+  background-color: @component-background;
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+/* Modifiers
+   ==========================================================================
+*/
+
+.noteItem {
+  &--resolved {
+    background-color: fade(@success-color, 5%);
+
+    h4 {
+      > :global(.anticon) {
+        color: @success-color;
+      }
+    }
+  }
+  &--pending {
+    background-color: fade(@error-color, 5%);
+
+    h4 {
+      > :global(.anticon) {
+        color: @error-color;
+      }
+    }
+  }
+}

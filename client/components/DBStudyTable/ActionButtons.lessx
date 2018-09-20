@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+
+  > * + * {
+    margin-left: @buttons-margin-space;
+  }
+
+  > div > :global(.anticon) {
+    font-size: 19px;
+    line-height: 18px;
+    vertical-align: text-top;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+/* Modifiers
+   ==========================================================================
+*/

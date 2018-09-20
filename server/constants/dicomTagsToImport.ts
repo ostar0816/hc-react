@@ -1,0 +1,15 @@
+export default [
+  'PatientName',
+  'PatientID',
+  'PatientBirthDate',
+  'PatientAge',
+  'PatientSex',
+  'AccessionNumber',
+  'StationName',
+  'StudyDescription',
+  'Modality',
+  'StudyDate',
+  'StudyInstanceUID',
+  'ReferringPhysicianName',
+  'ScheduledStudyLocationAETitle',
+];

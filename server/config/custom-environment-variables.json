@@ -1,0 +1,11 @@
+{
+  "mongodb": {
+    "uri": "MONGODB_URI"
+  },
+  "dcm4chee": {
+    "authClientSecret": "DCM4CHEE_CLIENT_SECRET",
+    "keycloakUrl": "DCM4CHEE_KEYCLOAK_URL",
+    "restUrl": "DCM4CHEE_RESTURL",
+    "AETitle": "DCM4CHEE_AETITLE"
+  }
+}

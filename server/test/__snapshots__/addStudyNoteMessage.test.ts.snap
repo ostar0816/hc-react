@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addUserNoteMessage add 1`] = `
+Object {
+  "addStudyNoteMessage": Object {
+    "notes": Array [
+      Object {
+        "messages": Array [
+          Object {
+            "createdBy": Object {
+              "firstName": "John",
+            },
+            "text": "There are missing images in first series.",
+          },
+          Object {
+            "createdBy": Object {
+              "firstName": "John",
+            },
+            "text": "Images were upload, retrive them again.",
+          },
+        ],
+        "resolved": true,
+        "type": "SUPPORT_STUDY_REQUEST",
+      },
+    ],
+    "supportRequestStatus": "RESOLVED",
+  },
+}
+`;

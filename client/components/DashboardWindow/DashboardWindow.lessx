@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Component DashboardWindow
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  :global(.ant-btn) {
+    font-size: 12px;
+  }
+}
+
+.body {
+  position: relative;
+  overflow: auto;
+}
+
+.windowTab {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 0 10px;
+  overflow: hidden;
+
+  &__skewContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__draggableTitle {
+    cursor: move;
+    padding: 5px 15px 5px;
+    margin-right: 5px;
+
+    z-index: 0;
+  }
+
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.window {
+  background-color: @background-color-base;
+}
+
+.header {
+  background-color: @primary-color;
+}
+
+.windowTab {
+  &__skewContainer {
+    background-color: @background-color-light;
+  }
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.header {
+  flex: 0 0 24px;
+
+  :global(.ant-btn) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.body {
+  flex: 1 2 auto;
+}
+
+.windowTab {
+  height: 100%;
+
+  &__skewContainer {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/
+
+.windowTab {
+  &__skewContainer {
+    &--left {
+      transform: skew(12deg);
+      transform-origin: left bottom;
+    }
+    &--right {
+      transform: skew(-12deg);
+      transform-origin: right bottom;
+    }
+  }
+}

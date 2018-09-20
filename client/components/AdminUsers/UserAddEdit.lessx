@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import '../../node_modules/antd/lib/style/themes/default.less';
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+.priorityColumnRowColor(@color) {
+  font-weight: bold;
+  color: @color;
+}
+
+/**
+ * Containers
+ *
+*/
+
+.content {
+  padding: 10px 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+    margin: 0;
+
+    > span:first-of-type {
+      font-weight: lighter;
+    }
+  }
+}
+
+.body {
+  position: relative;
+}
+
+.edit {
+  & > :global(.ant-tabs-card) {
+    > :global(.ant-tabs-content) {
+      margin-top: -16px;
+
+      > :global(.ant-tabs-tabpane) {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.edit {
+  & > :global(.ant-tabs-card) {
+    > :global(.ant-tabs-content) {
+      > :global(.ant-tabs-tabpane) {
+        background: @component-background;
+      }
+    }
+
+    > :global(.ant-tabs-bar) {
+      border-color: @component-background;
+
+      :global(.ant-tabs-tab) {
+        border-color: transparent;
+        background: transparent;
+      }
+
+      :global(.ant-tabs-tab-active) {
+        border-color: @component-background;
+        background: @component-background;
+      }
+    }
+  }
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.header,
+.buttons {
+  height: 45px;
+}
+
+.header {
+  > div {
+    flex: 1 2 auto;
+  }
+}
+
+.form {
+  min-width: 600px;
+  width: 600px;
+}
+
+/* Modifiers
+   ==========================================================================
+*/
+
+.transferList {
+  &--readOnly {
+    :global(.ant-checkbox-wrapper) {
+      display: none;
+    }
+    :global(.ant-transfer-operation) {
+      :global(.ant-btn) {
+        display: none;
+      }
+    }
+
+    :global(.ant-transfer-list-content-item):hover {
+      cursor: auto;
+    }
+
+    :global(.ant-transfer-list-header-selected) {
+      > span:first-of-type {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.priorityType {
+  &--priorityZERO {
+    // .priorityColumnRowColor(@);
+  }
+  &--priorityPLUSTWO {
+    .priorityColumnRowColor(@success-color);
+  }
+  &--priorityPLUSONE {
+    .priorityColumnRowColor(fade(@success-color, 60%));
+  }
+
+  &--priorityMINUSTWO {
+    .priorityColumnRowColor(@primary-color);
+  }
+  &--priorityMINUSONE {
+    .priorityColumnRowColor(fade(@primary-color, 60%));
+  }
+
+  &--priorityNEVER {
+    .priorityColumnRowColor(@error-color);
+  }
+}

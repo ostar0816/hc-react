@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import "../../node_modules/antd/lib/style/themes/default.less";
+@import "../../style/antdCustomThemeVars";
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+
+.rangePicker {
+    position: relative;
+
+    :global(.ant-calendar-picker-input) {
+        white-space: nowrap;
+    }
+}
+
+.input {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.footer {
+
+    > div {
+        display: flex;
+        //justify-content: space-between;
+        justify-content: flex-start;
+
+        > div {
+            margin-right: 5px;
+        }
+    }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+
+/* Item states
+   ==========================================================================
+*/
+
+
+/* Dimensions
+   ==========================================================================
+*/
+
+
+/* Modifiers
+   ==========================================================================
+*/

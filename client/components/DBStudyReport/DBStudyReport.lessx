@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.report,
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs,
+.report {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.report {
+  padding: 10px;
+
+  > div {
+    position: relative;
+  }
+
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+
+  &__requests {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: @buttons-margin-space;
+  }
+}
+
+.firstColumnContent {
+  display: flex;
+  flex-direction: column;
+
+  &__history {
+    overflow-y: auto;
+    padding: 4px 8px;
+
+    border-radius: @border-radius-base;
+  }
+}
+
+.table {
+  tr {
+    font-size: 11px;
+  }
+}
+
+.editor {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 36px; // antd tab height, 2*8padding + line-height
+
+  &__content {
+    position: relative;
+  }
+
+  &__footer {
+    padding-top: @buttons-margin-space;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.firstColumnContent {
+  &__history {
+    border: @border-width-base @border-style-base @border-color-base;
+
+    background-color: @component-background;
+  }
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.report {
+  > div:nth-of-type(1) {
+    flex: 0 0 auto;
+  }
+  > div:nth-of-type(2) {
+    flex: 0 0 auto;
+  }
+  > div:nth-of-type(3) {
+    flex: 1 2 auto;
+  }
+}
+
+.firstColumnContent {
+  > div:first-of-type {
+    flex: 1 2 100%;
+  }
+  > div:last-of-type {
+    flex: 0 1 auto;
+  }
+
+  &__history {
+    height: 94px;
+  }
+}
+
+.editor {
+  //height: 100%;
+
+  &__content {
+    flex: 1 2 auto;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

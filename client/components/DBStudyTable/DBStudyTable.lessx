@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  &__table {
+    position: relative;
+    // overflow-y: hidden; ???
+  }
+}
+
+.content,
+.table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tableToolbar {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.content {
+  &__panels {
+    // flex: 0 0 @window-toolbar-height + @study-table-worklist-height;
+    flex: 0 0 auto;
+  }
+
+  &__table {
+    flex: 1 2 auto;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/
+
+.tableRow {
+  &--warning {
+    background-color: lighten(@warning-color, 35%);
+  }
+}

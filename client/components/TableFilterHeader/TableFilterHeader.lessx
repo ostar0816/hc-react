@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Component TableCustom
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import "../../style/antdCustomThemeVars";
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+
+/**
+ * Containers
+ *
+*/
+
+.cell {
+
+    display: inline-block;
+    vertical-align: top;
+    //padding-right: 3px;
+
+    :global(.ant-input) {
+        margin: 3px 0;
+    }
+    :global(.ant-btn) + :global(.ant-btn) {
+        margin-left: @buttons-margin-space;
+    }
+
+    &__draggable {
+        cursor: move;
+
+        // text cut
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.sortArrows {
+    position: absolute;
+    
+    > span {
+        display: block;
+
+        text-align: center;
+        cursor: pointer;
+    }
+
+    :global(.anticon) {
+        vertical-align: top;
+    }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+//.cell {
+//    &__draggable:hover {
+//        position: relative;
+//        z-index: 2;
+//
+//        overflow: visible;
+//
+//        background-color: white;
+//        outline: 3px solid white;
+//
+//        max-width: initial;
+//        width: initial;
+//    }
+//}
+
+.sortArrows {
+    color: @text-color-secondary;
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+.sortArrows {
+
+    > span:hover {
+        color: @primary-4;
+
+    }
+
+    &__iconIsActive {
+        color: @primary-color;
+    }
+}
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.cell {
+    &__draggable {
+        // text cut
+        max-width: calc(100% - 15px);
+    }
+}
+
+.sortArrows {
+    > span {
+        width: 12px;
+    }
+}
+
+/* Modifiers
+   ==========================================================================
+*/
+
+.sortArrows {
+    &--primary {
+        top: 2px;
+        right: 12px;
+
+        > span {
+            height: 13px;
+        }
+
+        :global(.anticon) {
+            font-size: 10px;
+        }
+    }
+
+    &--secondary {
+        top: 5px;
+        right: 12px;
+
+        > span {
+            height: 6px;
+        }
+
+        :global(.anticon) {
+            font-size: 9px;
+        }
+    }
+}

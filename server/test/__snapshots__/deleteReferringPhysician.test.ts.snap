@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deleteReferringPhysician delete 1`] = `
+Object {
+  "deleteReferringPhysician": Object {
+    "referringPhysicians": Array [
+      Object {
+        "dicomValue": "KURT^HANNIG",
+        "email": "kurt.hannig@gmail.com",
+        "fax": "555 1452 333",
+        "name": "Kurt Hannig",
+        "phone": "666 1111 7777",
+        "physicianUid": "UI2222",
+      },
+    ],
+  },
+}
+`;

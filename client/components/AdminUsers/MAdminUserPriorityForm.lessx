@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import '../../node_modules/antd/lib/style/themes/default.less';
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.regexPreview {
+  :global(.ant-table-content) {
+    overflow: hidden;
+  }
+}
+
+.buttons {
+  text-align: right;
+
+  :global(.ant-btn) + :global(.ant-btn) {
+    margin-left: @buttons-margin-space;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+/* Modifiers
+   ==========================================================================
+*/

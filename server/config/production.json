@@ -1,0 +1,35 @@
+{
+    "name": "testing",
+    "host": "dcmdbinstance.c5stob52og5t.us-east-2.rds.amazonaws.com",
+    "hostIp": "13.59.156.24",
+    "baseUrl": "http://13.59.156.24:3000/",
+    "user": "pacs",
+    "password": "pacs",
+    "database": "pacsdb",
+    "admin_name": "superadmin",
+    "mongodb": {
+        "uri": "mongodb://localhost/pacs_ris",
+        "options": { "useMongoClient": true }
+    },
+    "sessionSecret": "topsecret",
+    "admin_user": "admin",
+    "admin_password": "Dm^4!1ncEtblR",
+    "port": 3000,
+    "localPath": "./uploads",
+    "dcm_root": "/home/ubuntu/dcminstall/dcm4chee-2.18.3-mysql/server/default/archive",
+    "s3CloudFrontUrl": "https://d1jhtdbh4b0dv6.cloudfront.net/",
+    "awss3": {
+        "accessKeyId": "AKIAJCCXICRUBOWSIVVA",
+        "secretAccessKey": "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",
+        "region": "us-east-2",
+        "bucket": "dcm4chee-storage"
+    },
+    "pubnub": {
+        "publishKey": "pub-c-7295f07d-42cb-480b-b504-975824c93f93",
+        "subscribeKey": "sub-c-b01e4900-0c88-11e8-b32f-5ea260837941",
+        "secretKey": "sec-c-M2M2YWVlMzYtYWMyZS00NjdhLWJkNTMtOTYwOGU4YzM1YzZm"
+    },
+    "defaultTAT": 15,
+    "superadmin": "admin@directradiology.com",
+    "defaultMenu": ["Study Edit", "Download", "Delete Study", "Assign Facilities", "Share Study", "Dictate Study", "Purge Images", "Print Report", "Dictate Image", "Facility Note","Confirm Study"]
+}

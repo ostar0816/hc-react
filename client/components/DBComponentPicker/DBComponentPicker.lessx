@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import '../../node_modules/antd/lib/style/themes/default.less';
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.pickComponent {
+  text-align: center;
+
+  :global(.ant-btn) {
+    padding-top: @padding-xs;
+    padding-bottom: @padding-xs;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.pickComponent {
+  height: 100%;
+
+  :global(.ant-btn) {
+    height: initial;
+
+    min-width: 138px;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

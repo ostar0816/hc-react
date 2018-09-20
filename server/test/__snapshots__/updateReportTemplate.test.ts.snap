@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateReportTemplate update 1`] = `
+Object {
+  "updateReportTemplate": Object {
+    "description": "Proper bone scan",
+    "name": "MR Bone U2",
+    "template": Object {
+      "editorStructure": Array [
+        "def",
+        18,
+      ],
+    },
+  },
+}
+`;

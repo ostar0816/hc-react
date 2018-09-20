@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import "../../style/antdCustomThemeVars";
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+
+/**
+ * Containers
+ *
+*/
+
+.popover {
+    :global(.ant-list-sm) :global(.ant-list-item) {
+        padding: 2px 0;
+    }
+}
+
+.createWorklist {
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-bottom: 5px;
+
+    > div:first-of-type {
+        padding-right: 10px;
+    }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+
+/* Item states
+   ==========================================================================
+*/
+
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.popover {
+    max-width: 500px;
+}
+
+.createWorklist {
+    > div:first-of-type {
+        flex: 1 2 auto;
+    }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import '../../node_modules/antd/lib/style/themes/default.less';
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.content {
+  padding: 10px 15px;
+}
+
+.edit {
+  & > :global(.ant-tabs-card) {
+    > :global(.ant-tabs-content) {
+      margin-top: -16px;
+
+      > :global(.ant-tabs-tabpane) {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+    margin: 0;
+
+    > span:first-of-type {
+      font-weight: lighter;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.tableRowPreview {
+  text-align: center;
+  font-size: 12px;
+
+  border-radius: @border-radius-base;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+.edit {
+  & > :global(.ant-tabs-card) {
+    > :global(.ant-tabs-content) {
+      > :global(.ant-tabs-tabpane) {
+        background: @component-background;
+      }
+    }
+
+    > :global(.ant-tabs-bar) {
+      border-color: @component-background;
+
+      :global(.ant-tabs-tab) {
+        border-color: transparent;
+        background: transparent;
+      }
+
+      :global(.ant-tabs-tab-active) {
+        border-color: @component-background;
+        background: @component-background;
+      }
+    }
+  }
+}
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.header,
+.buttons {
+  height: 45px;
+}
+
+.header {
+  > div {
+    flex: 1 2 auto;
+  }
+}
+
+.form {
+  min-width: 600px;
+  width: 600px;
+}
+
+.tableRowPreview {
+  width: 90px;
+}
+
+/* Modifiers
+   ==========================================================================
+*/
+
+.tableRowPreview {
+  &--warningFirst {
+    background-color: @facility-tat-limit-warning-first;
+  }
+  &--warningSecond {
+    background-color: @facility-tat-limit-warning-second;
+  }
+  &--warningLast {
+    background-color: @facility-tat-limit-warning-last;
+  }
+}

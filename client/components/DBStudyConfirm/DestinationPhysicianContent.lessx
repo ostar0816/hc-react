@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+// prettier-ignore
+@import "../../node_modules/antd/lib/style/themes/default.less";
+
+@import '../../style/antdCustomThemeVars';
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.tableWrapper {
+  &__table {
+    overflow: auto;
+
+    :global(.ant-table),
+    :global(.ant-btn) {
+      font-size: 12px;
+    }
+  }
+
+  &__select {
+    margin: @buttons-margin-space / 2 0;
+    :global(.ant-select-selection__choice) {
+      display: none;
+    }
+  }
+
+  &__addButton {
+    text-align: right;
+  }
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+/* Item states
+   ==========================================================================
+*/
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.tableWrapper {
+  &__table {
+    max-height: 130px;
+    //min-height: 130px;
+  }
+}
+
+/* Modifiers
+   ==========================================================================
+*/

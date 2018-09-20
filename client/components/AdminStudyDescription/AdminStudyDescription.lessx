@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Component
+   ========================================================================== */
+
+@import "../../node_modules/antd/lib/style/themes/default.less";
+@import "../../style/antdCustomThemeVars";
+
+/**
+ *
+ *
+ * Example HTML:
+*
+
+*
+*/
+
+/**
+ * Containers
+ *
+*/
+
+.studyDescription {
+    display:flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 10px 15px;
+}
+
+.add {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.table {
+    overflow: hidden;
+}
+
+/* Color theme
+   ==========================================================================
+*/
+
+
+/* Item states
+   ==========================================================================
+*/
+
+
+/* Dimensions
+   ==========================================================================
+*/
+
+.add {
+    flex: 0 0 45px;
+}
+.table {
+    flex: 1 2 auto;
+}
+
+/* Modifiers
+   ==========================================================================
+*/
